@@ -1591,6 +1591,7 @@
       var emit = _ref.emit,
         slots = _ref.slots,
         expose = _ref.expose;
+      console.log('teeeest');
       var range = vue.ref({
         start: 0,
         end: props.keeps,

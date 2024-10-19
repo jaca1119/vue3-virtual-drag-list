@@ -33,6 +33,8 @@ const VirtualDragList = defineComponent({
   props: VirtualProps,
   emits: ['update:dataSource', 'update:modelValue', 'top', 'bottom', 'drag', 'drop', 'add', 'remove'],
   setup(props, { emit, slots, expose }) {
+    console.log('teeeest');
+    
     const range = ref<Range>({ start: 0, end: props.keeps, front: 0, behind: 0 });
 
     const rootRef = ref<HTMLElement | null>(null);
